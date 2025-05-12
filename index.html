@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      /* Embedded CSS */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+        background-size: 400% 400%;
+        animation: gradientShift 10s ease infinite;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        overflow-y: auto; /* Add scrollbar */
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #ff6f91;
+      }
+
+      footer {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        padding: 8px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.8rem;
+        color: #ffffff;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 1;
+        margin: 80px auto 60px; /* Adjust margins for header and footer */
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #ff6f91;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        color: #fdfdfd;
+      }
+
+      .profile-picture {
+        margin: 15px 0;
+      }
+
+      .profile-picture img {
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-link {
+        display: inline-block;
+        margin: 8px 4px;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+        font-size: 0.85rem;
+      }
+
+      .project-link:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .contact-section {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .contact-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #ff6f91;
+      }
+
+      .contact-link {
+        display: inline-block;
+        margin: 8px 4px;
+        padding: 8px 16px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        transition: background 0.3s, transform 0.3s;
+      }
+
+      .contact-link:hover {
+        background: rgba(255, 255, 255, 0.4);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My World</h1>
+    </header>
+
+    <div class="container">
+      <h1>🎨 About Me</h1>
+      <p>
+        Welcome to my vibrant corner of the internet! Here, creativity meets web
+        development. Let's make something colorful together.
+      </p>
+
+      <div class="profile-picture">
+        <img
+          src="https://i.imgur.com/sJRq3fJ.jpeg"
+          alt="Cartoon Profile Picture"
+        />
+      </div>
+
+      <p>
+        For anyone who wants to start learning code, this workshop is very
+        interesting. You can also see my projects below!
+      </p>
+
+      <!-- Projects Section -->
+      <h2>🌟 My Projects</h2>
+      <a
+        href="https://codepen.io/your-work"
+        target="_blank"
+        class="project-link"
+        >CodePen Creations</a
+      >
+      <a
+        href="https://vercel.com/babycoder91as-projects/croissantsmooshone"
+        target="_blank"
+        class="project-link"
+        >Croissant Smoosh</a
+      >
+      <a
+        href="https://vercel.com/babycoder91as-projects/penguin-hub-dub-fish"
+        target="_blank"
+        class="project-link"
+        >Penguin Hub Dub Fish</a
+      >
+      <a
+        href="https://world-clock-one-stop.vercel.app/"
+        target="_blank"
+        class="project-link"
+        >World Clock App</a
+      >
+      <a
+        href="https://she-codes-weather-app-one.vercel.app/"
+        target="_blank"
+        class="project-link"
+        >Weather App</a
+      >
+
+      <div class="contact-section">
+        <h2>Contact Me</h2>
+        <a href="mailto:myemail@example.com" class="contact-link">Email</a>
+        <a href="https://github.com/myprofile" class="contact-link">GitHub</a>
+        <a href="https://linkedin.com/in/myprofile" class="contact-link"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
